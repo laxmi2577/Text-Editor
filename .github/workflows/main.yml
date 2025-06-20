@@ -1,0 +1,26 @@
+# Name of the GitHub Actions workflow. This is what you&#39;ll see in the &quot;Actions&quot; tab.
+name: Build and Deploy Text Utility Tool
+
+# Controls when the workflow will run.
+
+on:
+
+# Triggers the workflow on push events but only for the "main" branch.
+
+push:
+branches: [ "main" ]
+
+# Triggers the workflow on pull request events targeted at the "main" branch.
+
+pull\_request:
+branches: [ "main" ]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel.
+
+jobs:
+
+# This workflow contains a single job called "build-and-deploy".
+
+build-and-deploy:
+\# The type of runner that the job will run on. 'ubuntu-latest' is a standard choice.
+runs-on: ubuntu-latest
